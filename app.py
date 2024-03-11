@@ -11,7 +11,7 @@ placeholder = st.empty()
 with placeholder.container():
     age = st.number_input("Entrez votre age en année", value=None, placeholder="Age...")
     poid = st.number_input("Entrez votre poid en kilogramme", value=None, placeholder="Poid...")
-    st.image('pages/BF.png', width=330)
+    st.image('BF.png', width=330)
     BF = st.number_input("En vous aidant de la photo ci-dessus, entrez votre taux de masse grasse en pourcentage", value=None, placeholder="Body fat...")
     taille = st.number_input("Entrez votre taille en centimetre", value=None, placeholder="Taille...")
     pilo = st.number_input("Entrez votre pilosité sur une echelle de 0 à 100, 0 correspondant à une absence totale de poil et 100 à un corps entierement couvert de fourrure", value=None, placeholder="Pilosité...")
@@ -26,20 +26,20 @@ if st.button('Valider'):
     if age>64:
         st.write('Vous êtes un boomer, il faut baisser les retraites géantes des boomers.')
     elif twinkness>=98 and chadness<=73:
-        st.image('pages/twink.png')
+        st.image('twink.png')
     elif twinkness>=98 and chadness>73:
-        st.image('pages/twunk.png')
+        st.image('twunk.png')
     elif chadness >86 and daddyness<60:
-        st.image('pages/gigachad.png')
+        st.image('gigachad.png')
     elif chadness >86 and daddyness>=60:
-        st.image('pages/daddychad.png')
+        st.image('daddychad.png')
     elif chadness <=86 and daddyness>60 and IMC<24:
-        st.image('pages/daddy.png')
+        st.image('daddy.png')
     elif chadness <=86 and daddyness>60 and IMC>=24:
-        st.image('pages/bears.png')
+        st.image('bears.png')
     elif daddyness>49 :
-        st.image('pages/bears.png')
+        st.image('bears.png')
     else :
-        st.write('pages/bears.png')
+        st.image('inclas.png')
 
   
